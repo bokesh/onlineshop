@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Workshop 3</title>
+  <meta name="description" content="Epigraphy.info is an international open community pursuing a collaborative environment for digital epigraphy, which facilitates scholarly communication and interaction.
+">
+  
+  <meta name="author" content="Petra Hermankova (webmaster)">
+  <meta name="copyright" content="&copy; Petra Hermankova (webmaster) 2022">
+  
+
+  <!-- External libraries -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.0/openseadragon.min.js"></script>
+
+<!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+  <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <!-- Facebook OGP cards -->
+  <meta property="og:description" content="Epigraphy.info is an international open community pursuing a collaborative environment for digital epigraphy, which facilitates scholarly communication and interaction.
+" />
+  <meta property="og:url" content="http://localhost:4000" />
+  <meta property="og:site_name" content="Epigraphy.info" />
+  <meta property="og:title" content="Workshop 3" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://localhost:4000/assets/logo.jpg" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="612" />
+  <meta property="og:image:height" content="605" />
+  
+
+  
+  <!-- Twitter: card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Workshop 3">
+  <meta name="twitter:description" content="Epigraphy.info is an international open community pursuing a collaborative environment for digital epigraphy, which facilitates scholarly communication and interaction.
+">
+  <meta name="twitter:image" content="http://localhost:4000/assets/logo.jpg">
+  <meta name="twitter:url" content="http://localhost:4000">
+  
+
+  
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/workshop_3/">
+  <link rel="alternate" type="application/rss+xml" title="Epigraphy.info" href="http://localhost:4000/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
+      
+      <img src="/assets/logo.jpg" alt="Epigraphy.info">
+      
+    </a>
+    <!-- <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a> -->
+    <nav role="navigation">
+      <!-- <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="responsiveHeaderFunction()">&#9776;</a>
+</div> -->
+
+<div class="topnav" id="myTopnav">
+  
+    
+
+
+<!-- <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div> -->
+
+<div class="dropdown">
+	<button class="dropbtn">News
+      <i class="fa fa-caret-down"></i>
+    </button>
+<div class="dropdown-content">
+ 
+    <a href="/news/">Latest news</a>
+
+
+  
+    <a href="/events/">Upcoming events</a>
+
+
+   
+  </div>
+</div> 
+       
+  
+    
+
+
+<!-- <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div> -->
+
+<div class="dropdown">
+	<button class="dropbtn">People
+      <i class="fa fa-caret-down"></i>
+    </button>
+<div class="dropdown-content">
+ 
+    <a href="/committee/">Steering Committee</a>
+
+
+  
+    <a href="/partners/">Partners</a>
+
+
+   
+  </div>
+</div> 
+       
+  
+    
+
+
+<!-- <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div> -->
+
+<div class="dropdown">
+	<button class="dropbtn">Working Groups
+      <i class="fa fa-caret-down"></i>
+    </button>
+<div class="dropdown-content">
+ 
+    <a href="/working_groups/">Working groups</a>
+
+
+  
+    <a href="/social_media_wg/">Social Media</a>
+
+
+  
+    <a href="/funding_wg/">Funding</a>
+
+
+  
+    <a href="/ontologies_wg/">Ontologies</a>
+
+
+  
+    <a href="/vocabularies_wg/">Vocabularies</a>
+
+
+   
+  </div>
+</div> 
+       
+  
+    
+
+
+<!-- <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div> -->
+
+<div class="dropdown">
+	<button class="dropbtn">Meetings
+      <i class="fa fa-caret-down"></i>
+    </button>
+<div class="dropdown-content">
+ 
+    <a href="/workshop_1/">Workshop 1 (Heidelberg)</a>
+
+
+  
+    <a href="/workshop_2/">Workshop 2 (Zadar)</a>
+
+
+  
+    <a href="/workshop_3/">Workshop 3 (Vienna)</a>
+
+
+  
+    <a href="/nacgle_2020/">Nacgle 2020</a>
+
+
+  
+    <a href="/workshop_4/">Workshop 4 (Hamburg)</a>
+
+
+  
+    <a href="/workshop_5/">Workshop 5 (Leuven/online)</a>
+
+
+  
+    <a href="/workshop_6/">Workshop 6 (IAS/online)</a>
+
+
+  
+    <a href="/workshop_7/">Workshop 7 (Leuven)</a>
+
+
+   
+  </div>
+</div> 
+       
+  
+    
+
+
+<!-- <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div> -->
+
+<div class="dropdown">
+	<button class="dropbtn">Documents
+      <i class="fa fa-caret-down"></i>
+    </button>
+<div class="dropdown-content">
+ 
+    <a href="/documents/">Documents</a>
+
+
+   
+  </div>
+</div> 
+       
+  
+    
+
+
+<!-- <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div> -->
+
+<div class="dropdown">
+	<button class="dropbtn">Contact
+      <i class="fa fa-caret-down"></i>
+    </button>
+<div class="dropdown-content">
+ 
+    <a href="/contact/">Contact us</a>
+
+
+  
+    <a href="/join_us/">Join us!</a>
+
+
+   
+  </div>
+</div> 
+       
+  
+  <a href="javascript:void(0);" class="icon" onclick="responsiveHeaderFunction()">&#9776;</a>
+</div>
+
+ 
+    </nav>
+  </div>
+</header>
+
+
+    <div class="page-content">
+        <div class="wrapper">
+<div class="page">
+
+  <header class="post-header">
+    <h1 class="post-title">Workshop 3</h1>
+  </header>
+
+  <span class="page-divider">
+  <span class="one"></span>
+  <span class="two"></span>
+</span>
+
+
+  <article class="post-content">
+    <h1 id="epigraphyinfo-workshop-iii-vienna">Epigraphy.info Workshop III Vienna</h1>
+
+<p>The third Epigraphy.info workshop in Vienna will be taking place from Thursday May, 30th – Saturday June, 1st 2019.</p>
+
+<hr />
+
+<ul>
+  <li>
+    <p><a href="/documents/workshop_3_programme.pdf" target="_blank" rel="noopener">Programme of the Workshop</a></p>
+  </li>
+  <li><a href="https://doi.org/10.11588/heidok.00027928" target="_blank" rel="noopener">Report on the third workshop in Vienna</a></li>
+  <li><a href="https://docs.google.com/document/d/1LwapkTiAyGbMW5U79uQ2dmxDPM3K51eTxDV7qo6BrP8/edit?usp=sharing" target="_blank" rel="noopener">Collaborative Google Docs</a></li>
+  <li>
+    <h2 id="workshop-slides-on-github"><a href="https://github.com/petrifiedvoices/epigraphy-info/tree/main/documents/workshop_3_slides" target="_blank" rel="noopener">Workshop slides on Github</a></h2>
+  </li>
+</ul>
+
+<h2 id="registration">Registration</h2>
+
+<p>In order to register for the workshop, we kindly ask you to fill out this <a href="https://doodle.com/poll/7g8grfbritf7bzwn" target="_blank" rel="noopener">doodle list</a> until 28th February.</p>
+
+<h2 id="epidoc--technical-training">EpiDoc &amp; technical training</h2>
+
+<p>The Vienna workshop will be preceded by 3 ½ days of training, which aims at giving an orientation on EpiDoc, XML, DTS etc.
+The training will take place from May, 27th, to the morning of May, 30th 2019. In the afternoon of the same day the epigraphy.info workshop will start.
+Please note that the room provided by the University of Vienna for the training contains max. 24 persons. Therefore, we kindly ask you to register as soon as possible by filling out the <a href="https://doodle.com/poll/7g8grfbritf7bzwn" target="_blank" rel="noopener">doodle list</a> until 28th February.</p>
+
+<ul>
+  <li><strong><a href="/documents/workshop_3_training_programme.pdf" target="_blank" rel="noopener">Programme of the EpiDoc &amp; Technical Training</a></strong></li>
+</ul>
+
+<h2 id="venue">Venue</h2>
+
+<p>The technical training and the epigraphy.info workshop will take place in different buildings of the <a href="https://www.univie.ac.at/fileadmin/user_upload/startseite/Dokumente/Umgebungsplan2014.pdf" target="_blank" rel="noopener">University of Vienna</a>.</p>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.213820883347!2d16.35785635136637!3d48.21318547912756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d07bdebd3d9dd%3A0xd7f665432f73f3c4!2sUniversity%20of%20Vienna!5e1!3m2!1sen!2sdk!4v1611065113180!5m2!1sen!2sdk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+<ul>
+  <li>Technical Training 27th - 29th May
+Erika-Weinzierl-Saal
+University of Vienna – Main Building, Universitätsring 1
+ Getting there by public transport:
+ Schottentor (Universität)
+ Metro: U2; Tram: 1, 37, 38, 40, 41, 42, 43, 44, 71, D; Bus: 1A, 40A</li>
+  <li>Technical Training 30th May &amp; Epigraphy.info Workshop
+Alte Kapelle am Campus, University Campus, Spitalgasse 2, 1090 Wien
+ Getting there by public transport:
+ Lange Gasse
+ Tram: 5, 33, 43, 44</li>
+  <li>Epigraphy.info workshop: Alte Kapelle am Campus, University Campus, Spitalgasse 2, 1090 Wien
+ Getting there by public transport:
+ Lange Gasse
+ Tram: 5, 33, 43, 44</li>
+</ul>
+
+<p><a href="https://www.wienerlinien.at/eportal3/ep/channelView.do/pageTypeId/66533/channelId/-2000641" target="_blank" rel="noopener">Timetables for public transport</a></p>
+
+<p>Public transport maps in <a href="https://www.wienerlinien.at/eportal3/ep/channelView.do/pageTypeId/66526/channelId/-47187" target="_blank" rel="noopener">German</a></p>
+
+<p>Citybike:
+You can also get around the city easily by hiring a Citybike. And it’s free! For more information, please visit: <a href="https://www.citybikewien.at/en/" target="_blank" rel="noopener">https://www.citybikewien.at/en/</a>.</p>
+
+<h3 id="how-to-get-into-the-city-centre">How to get into the city centre</h3>
+<p>At the airport <a href="http://www.viennaairport.com/en/passengers/arriving_passenger" target="_blank" rel="noopener">http://www.viennaairport.com/en/passengers/arriving_passenger</a></p>
+
+<h4 id="from-the-airport">From the airport</h4>
+<ul>
+  <li>
+    <p>By train: there are two train services available. The CAT (one way €11; return €19) and the considerably cheaper suburban railway line S7 (timetable as pdf). As the airport is outside the Vienna city limits, you will need two tickets: one for the zone up to the Vienna city limits for €1.80 and a ticket for the Vienna city zone for €2.40 available at the vending machines at the station. Vienna-Card or holders of multi-day tickets (Wiener Linien) need ONLY one single ticket for the Vienna outer zone (€1.80). Please validate the ticket before starting your journey.</p>
+  </li>
+  <li>
+    <p>By bus
+There are also regional buses connecting the airport with the city centre (one way €8; return €13).</p>
+  </li>
+  <li>
+    <p>By taxi
+There are different taxi/limousine services that can be booked online and bring you directly to your destination. Approx. price: 30-45€.</p>
+  </li>
+  <li>
+    <p>From the railway or bus station
+Metro lines, trams and buses of the Wiener Linien take you from any train or bus station to any other place in the city.</p>
+  </li>
+</ul>
+
+<p>If you will be using public transport frequently, we suggest the purchase of a weekly pass (€17.10, valid from Monday to the following Monday 9am), but 24-,48- and 72-hour tickets are also available. The fare for a single trip is €2.40. Tickets are valid on all public transport lines within Vienna’s Zone 100.</p>
+
+<ul>
+  <li>By car
+As tolls are compulsory on all motorways and expressways in Austria, you will need a vignette to use Vienna’s city motorways. You can find detailed information on the toll charges here. Some of Vienna’s districts are entirely short-stay parking zones. In districts 1 to 9 and 20, you will need to purchase a parking ticket from Monday to Friday (except on public holidays) between 9.00 am and 10.00 pm. In districts 10 to 12 and 14 to 18, short-stay parking zones apply from Monday to Friday (excluding public holidays) from 9.00 am to 7.00 pm. [more details]. We strongly recommend the option of Park &amp; Ride.</li>
+</ul>
+
+<h3 id="accommodation">Accommodation</h3>
+<p>Following this <a href="https://event.univie.ac.at/kongressservice/hotelreservierung/hotel-firmenvereinbarungen/hotels-in-wien/?fbclid=IwAR0xKo4gd4VpIAd1bl4LifrOUN4zE8xArsxlUrCxhn35UmRwGT6AbbW7QE8" target="_blank" rel="noopener">link</a> you can find some hotels recommended by the University of Vienna. The 1st and 9th districts are the closest to the workshop’s venue.</p>
+
+<p>Vienna Tourism
+If you are planning to visit Vienna, here you find some useful information for <a href="https://www.wien.info/en" target="_blank" rel="noopener">sightseeing</a> and <a href="https://www.city-walks.info/Vienna/Attractions.html" target="_blank" rel="noopener">city-walks</a>.</p>
+
+<hr />
+
+<h1 id="programme">Programme</h1>
+
+<h2 id="thursday-30th-may-2019">Thursday, 30th May 2019</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>13:00 – 14:00</td>
+      <td>Registration, Welcome coffee</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>14:00 – 14:30</td>
+      <td>Opening greetings and Introduction (plenary)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>14:30 – 16:00</td>
+      <td>1st afternoon session (plenary)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>14:30 – 14:50</td>
+      <td>Presentation: An epigraphical integration from EPNet to ARIADNEplus projects. About ontologies and databases. (J. M. Bermúdez Lorenzo: per video)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>14:50 – 15:10</td>
+      <td>Presentation: Romans 1 by 1 (R. Varga)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>15:10 – 15:30</td>
+      <td>Presentation: TM People dataset (T. Gheldof)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>15:30 – 16:00</td>
+      <td>General discussion on prosopography (moderated by T. Gheldof)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>16:00 – 16:30</td>
+      <td>Coffee break</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>16:30 – 18.30</td>
+      <td>2nd afternoon session (plenary)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>16:30 – 17:00</td>
+      <td>Report on a planned EphEp-online project in conjunction with epigraphy.info (M. Horster)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>17:00 – 17:30</td>
+      <td>Impulse: A distributed system architecture rather than a monolithic application (T. Elliott)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>17:30 – 18:00</td>
+      <td>Presentation: Patrimonium » Petrae Editor: Epidoc encoding made easier (V. Razanajao)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>18:00 – 18:30</td>
+      <td>Discussion: Editorial board considerations: duties and composition (moderated by J. Cowey)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>19:00 –</td>
+      <td>Social Dinner</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="friday-31th-may-2019">Friday, 31th May 2019</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>09:00 – 10:45</td>
+      <td>1st morning session (plenary)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>09:00 – 09:35</td>
+      <td>Discussion: User scenarios. Building upon User stories and User profiles (moderated by T. Elliott)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>09:35 – 10:10</td>
+      <td>Discussion: “starting set” of metadata fields for search. Normalized encoding standards (including vocabularies in use) from EAGLE and Oxford Meeting. (moderated by J. Cowey)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>10:10 – 10:45</td>
+      <td>Discussion: RDF structures for metadata (moderated by T. Gheldof)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>10:45 – 11:15</td>
+      <td>Coffee break</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>11:15 – 13:00</td>
+      <td>2nd morning session (breakout)</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>User stories and next steps (to be arranged at the meeting)</li>
+  <li>RDF specifications and next steps (to be arranged at the meeting)</li>
+</ul>
+
+<p><br /></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>13:00 – 14:00</td>
+      <td>Lunch break</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>14:00 – 16:00</td>
+      <td>1st afternoon session (plenary)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>14:00 – 14:30</td>
+      <td>Presentation: Thesaurus editor curating and publishing Eagle thesaurus (V. Razanajao)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>14:30 – 16:00</td>
+      <td>Discussion: Editing texts, metadata and dealing with images</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>16:00 – 16:30</td>
+      <td>Coffee break</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>16:30 – 18:00</td>
+      <td>2nd afternoon session (breakout,themes to be set at the meeting)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>18:30 – 19:30	Evening lecture: <a href="/documents/workshop_3_slides/Lecture_Sarullo.pdf" target="_blank" rel="noopener">G. Sarullo, The Forum cippus and its copies. The contribution of the casts to its reading</a>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>20:00 –	Social Dinner</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h2 id="saturday-1st-june-2019">Saturday, 1st June 2019</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>09:00 – 10:45</td>
+      <td>Morning session (plenary)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>09:00 – 09:45</td>
+      <td>Impulse: Unpublished texts. Recommendations for the correct handling and best practices (F. Feraudi)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>09:45 – 10:30</td>
+      <td>Decision on the <a href="/documents/JO_proposal_steering_committee_Vienna.pdf" target="_blank" rel="noopener">proposal for the organisation and selection of the steering committee</a> submitted by J. Osnabrügge</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>10:30 – 10:45</td>
+      <td>Election of the steering committee</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>10:45 – 11:15</td>
+      <td>Coffee break</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>11:15 – 13:30</td>
+      <td>Final discussion (plenary) (moderated by J. Cowey / F. Feraudi)</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>What are the next steps that we should take? General discussion.</li>
+  <li>Decision on who will represent epigraphy.info during the <a href="https://www.asgle.org/nacgle-2020-washington-d-c/" target="_blank" rel="noopener">NACGLE 2020</a> and/or whether it will coincide with (one of) the next regular epigraphy.info workshop(s).</li>
+  <li>Decision on where the next epigraphy.info meeting should take place.</li>
+</ul>
+
+  </article>
+  
+</div>
+</div>
+
+    </div>
+
+    <br>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h3 class="footer-heading">Epigraphy.info</h3>
+<!--
+    <div class="site-navigation">
+
+      <p><strong>Site Map </strong></p>
+      <ul class="pages">
+        
+        
+          <li class="nav-link"><a href="/404.html">Are you lost?</a>
+        
+        
+        
+          <li class="nav-link"><a href="/committee/">Committee</a>
+        
+        
+        
+          <li class="nav-link"><a href="/contact/">Contact</a>
+        
+        
+        
+          <li class="nav-link"><a href="/documents/">Documents</a>
+        
+        
+        
+          <li class="nav-link"><a href="/events/">Upcoming Events</a>
+        
+        
+        
+        
+        
+          <li class="nav-link"><a href="/funding_wg/">Funding WG</a>
+        
+        
+        
+        
+        
+          <li class="nav-link"><a href="/join_us/">Join us!</a>
+        
+        
+        
+        
+        
+          <li class="nav-link"><a href="/nacgle_2020/">NACGLE 2020</a>
+        
+        
+        
+          <li class="nav-link"><a href="/news/">News</a>
+        
+        
+        
+          <li class="nav-link"><a href="/ontologies_wg/">Technical WG - Ontologies</a>
+        
+        
+        
+          <li class="nav-link"><a href="/partners/">Partners</a>
+        
+        
+        
+          <li class="nav-link"><a href="/social_media_wg/">Social Media WG</a>
+        
+        
+        
+          <li class="nav-link"><a href="/vocabularies_wg/">Technical WG - Vocabularies</a>
+        
+        
+        
+          <li class="nav-link"><a href="/working_groups/">Working Groups</a>
+        
+        
+        
+          <li class="nav-link"><a href="/workshop_1/">Workshop 1</a>
+        
+        
+        
+          <li class="nav-link"><a href="/workshop_2/">Workshop 2</a>
+        
+        
+        
+          <li class="nav-link"><a href="/workshop_3/">Workshop 3</a>
+        
+        
+        
+          <li class="nav-link"><a href="/workshop_4/">Workshop 4</a>
+        
+        
+        
+          <li class="nav-link"><a href="/workshop_5/">Workshop 5</a>
+        
+        
+        
+          <li class="nav-link"><a href="/workshop_6/">Workshop 6</a>
+        
+        
+        
+          <li class="nav-link"><a href="/workshop_6_posters/">Workshop 6 posters</a>
+        
+        
+        
+          <li class="nav-link"><a href="/workshop_7/">Workshop 7</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+-->    
+
+    <div class="site-contact">
+
+      <p><strong>Contact us</strong></p>
+      <ul class="social-media-list">
+        <li>
+          <a href="mailto:info@epigraphy.info">
+            <i class="fa fa-envelope-o"></i>
+            <span class="username">info@epigraphy.info</span>
+          </a>
+        </li>
+
+        
+          
+          <li>
+            <a href="https://github.com/epigraphy-info" title="Fork us on GitHub">
+              <i class="fa fa-github"></i>
+              <span class="username">epigraphy-info</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://twitter.com/epigraphy_info" title="Follow us on Twitter">
+              <i class="fa fa-twitter"></i>
+              <span class="username">epigraphy_info</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://facebook.com/epigraphy.info" title="Follow us on Facebook">
+              <i class="fa fa-facebook"></i>
+              <span class="username">epigraphy.info</span>
+            </a>
+          </li>
+          
+        
+          
+        
+          
+          <li>
+            <a href="https://www.youtube.com/c/epigraphy-info" title="Subscribe on YouTube">
+              <i class="fa fa-youtube"></i>
+              <span class="username">epigraphy-info</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://www.instagram.com/epigraphy.info/" title="Follow us on Instagram">
+              <i class="fa fa-instagram"></i>
+              <span class="username">epigraphy.info</span>
+            </a>
+          </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+      </ul>
+    </div>
+
+    <div class="site-signature">
+      <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+      <p class="text">Epigraphy.info is an international open community pursuing a collaborative environment for digital epigraphy, which facilitates scholarly communication and interaction.
+</p>
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Default syntax highlighting
+  hljs.initHighlightingOnLoad();
+
+  // Header
+  // var menuToggle = $('#js-mobile-menu').unbind();
+  // $('#js-navigation-menu').removeClass("show");
+  // menuToggle.on('click', function(e) {
+  //   e.preventDefault();
+  //   $('#js-navigation-menu').slideToggle(function(){
+  //     if($('#js-navigation-menu').is(':hidden')) {
+  //       $('#js-navigation-menu').removeAttr('style');
+  //     }
+  //   });
+  // });
+});
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function responsiveHeaderFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+</script>
+
+
+
+
+
+
+  </body>
+
+</html>

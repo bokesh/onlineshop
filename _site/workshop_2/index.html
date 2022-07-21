@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Workshop 2</title>
+  <meta name="description" content="Epigraphy.info is an international open community pursuing a collaborative environment for digital epigraphy, which facilitates scholarly communication and interaction.
+">
+  
+  <meta name="author" content="Petra Hermankova (webmaster)">
+  <meta name="copyright" content="&copy; Petra Hermankova (webmaster) 2022">
+  
+
+  <!-- External libraries -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.0/openseadragon.min.js"></script>
+
+<!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+  <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <!-- Facebook OGP cards -->
+  <meta property="og:description" content="Epigraphy.info is an international open community pursuing a collaborative environment for digital epigraphy, which facilitates scholarly communication and interaction.
+" />
+  <meta property="og:url" content="http://localhost:4000" />
+  <meta property="og:site_name" content="Epigraphy.info" />
+  <meta property="og:title" content="Workshop 2" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://localhost:4000/assets/logo.jpg" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="612" />
+  <meta property="og:image:height" content="605" />
+  
+
+  
+  <!-- Twitter: card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Workshop 2">
+  <meta name="twitter:description" content="Epigraphy.info is an international open community pursuing a collaborative environment for digital epigraphy, which facilitates scholarly communication and interaction.
+">
+  <meta name="twitter:image" content="http://localhost:4000/assets/logo.jpg">
+  <meta name="twitter:url" content="http://localhost:4000">
+  
+
+  
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/workshop_2/">
+  <link rel="alternate" type="application/rss+xml" title="Epigraphy.info" href="http://localhost:4000/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
+      
+      <img src="/assets/logo.jpg" alt="Epigraphy.info">
+      
+    </a>
+    <!-- <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a> -->
+    <nav role="navigation">
+      <!-- <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="responsiveHeaderFunction()">&#9776;</a>
+</div> -->
+
+<div class="topnav" id="myTopnav">
+  
+    
+
+
+<!-- <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div> -->
+
+<div class="dropdown">
+	<button class="dropbtn">News
+      <i class="fa fa-caret-down"></i>
+    </button>
+<div class="dropdown-content">
+ 
+    <a href="/news/">Latest news</a>
+
+
+  
+    <a href="/events/">Upcoming events</a>
+
+
+   
+  </div>
+</div> 
+       
+  
+    
+
+
+<!-- <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div> -->
+
+<div class="dropdown">
+	<button class="dropbtn">People
+      <i class="fa fa-caret-down"></i>
+    </button>
+<div class="dropdown-content">
+ 
+    <a href="/committee/">Steering Committee</a>
+
+
+  
+    <a href="/partners/">Partners</a>
+
+
+   
+  </div>
+</div> 
+       
+  
+    
+
+
+<!-- <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div> -->
+
+<div class="dropdown">
+	<button class="dropbtn">Working Groups
+      <i class="fa fa-caret-down"></i>
+    </button>
+<div class="dropdown-content">
+ 
+    <a href="/working_groups/">Working groups</a>
+
+
+  
+    <a href="/social_media_wg/">Social Media</a>
+
+
+  
+    <a href="/funding_wg/">Funding</a>
+
+
+  
+    <a href="/ontologies_wg/">Ontologies</a>
+
+
+  
+    <a href="/vocabularies_wg/">Vocabularies</a>
+
+
+   
+  </div>
+</div> 
+       
+  
+    
+
+
+<!-- <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div> -->
+
+<div class="dropdown">
+	<button class="dropbtn">Meetings
+      <i class="fa fa-caret-down"></i>
+    </button>
+<div class="dropdown-content">
+ 
+    <a href="/workshop_1/">Workshop 1 (Heidelberg)</a>
+
+
+  
+    <a href="/workshop_2/">Workshop 2 (Zadar)</a>
+
+
+  
+    <a href="/workshop_3/">Workshop 3 (Vienna)</a>
+
+
+  
+    <a href="/nacgle_2020/">Nacgle 2020</a>
+
+
+  
+    <a href="/workshop_4/">Workshop 4 (Hamburg)</a>
+
+
+  
+    <a href="/workshop_5/">Workshop 5 (Leuven/online)</a>
+
+
+  
+    <a href="/workshop_6/">Workshop 6 (IAS/online)</a>
+
+
+  
+    <a href="/workshop_7/">Workshop 7 (Leuven)</a>
+
+
+   
+  </div>
+</div> 
+       
+  
+    
+
+
+<!-- <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div> -->
+
+<div class="dropdown">
+	<button class="dropbtn">Documents
+      <i class="fa fa-caret-down"></i>
+    </button>
+<div class="dropdown-content">
+ 
+    <a href="/documents/">Documents</a>
+
+
+   
+  </div>
+</div> 
+       
+  
+    
+
+
+<!-- <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div> -->
+
+<div class="dropdown">
+	<button class="dropbtn">Contact
+      <i class="fa fa-caret-down"></i>
+    </button>
+<div class="dropdown-content">
+ 
+    <a href="/contact/">Contact us</a>
+
+
+  
+    <a href="/join_us/">Join us!</a>
+
+
+   
+  </div>
+</div> 
+       
+  
+  <a href="javascript:void(0);" class="icon" onclick="responsiveHeaderFunction()">&#9776;</a>
+</div>
+
+ 
+    </nav>
+  </div>
+</header>
+
+
+    <div class="page-content">
+        <div class="wrapper">
+<div class="page">
+
+  <header class="post-header">
+    <h1 class="post-title">Workshop 2</h1>
+  </header>
+
+  <span class="page-divider">
+  <span class="one"></span>
+  <span class="two"></span>
+</span>
+
+
+  <article class="post-content">
+    <h1 id="epigraphyinfo-workshop-ii-zadar">Epigraphy.info Workshop II Zadar</h1>
+
+<p>The second epigraphy.info workshop in Zadar (University of Zadar) took place from Friday, Friday, December 14th – Sunday, December 16th 2018, immediately after the “Linked Pasts IV” conference in Mainz. The workshop took place at the University of Zadar, at the Department of History, at the address Ruđera Boškovića 5.</p>
+
+<hr />
+
+<ul>
+  <li>
+    <p><a href="/documents/programme_epigraphy-info-ws_ZD_14-16-12-2018.pdf" target="_blank" rel="noopener">Programme of the workshop</a></p>
+  </li>
+  <li>
+    <p><a href="http://doi.org/10.11588/heidok.00026330" target="_blank" rel="noopener">Report on the second workshop in Zadar</a></p>
+  </li>
+  <li>
+    <p><a href="https://docs.google.com/document/d/1lVrzkASteBc-H1Ocy_cdcEM67FO9RcPM-j25-925yc8/edit" target="_blank" rel="noopener">Collaborative Google Docs</a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/petrifiedvoices/epigraphy-info/tree/main/documents/workshop_2_slides" target="_blank" rel="noopener">Workshop slides on Github</a></p>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="venue">Venue</h3>
+
+<p>Zadar, University of Zadar - Department of History, Ruđera Boškovića 5.It’s placed in the historical Zadar old town, so called Poluotok (Engl. Peninsula).</p>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.839845071386!2d16.463124615577073!3d43.505676469975405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13355e21edccc9ef%3A0xc140f2f6e116262e!2zVWwuIFJ1xJFlcmEgQm_FoWtvdmnEh2EgNSwgMjEwMDAsIFNwbGl0LCBDcm9hdGlh!5e0!3m2!1sen!2sdk!4v1613127759383!5m2!1sen!2sdk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<p><br /></p>
+
+<h3 id="attendance">Attendance</h3>
+
+<p>We kindly ask you to visit the <a href="https://doodle.com/poll/gmmuqbvpsrtwwqgc" target="_blank" rel="noopener">Doodle Poll</a>  and register either your attendance or one of the other two options by September 24th.</p>
+
+<h3 id="preliminary-programme">Preliminary programme</h3>
+
+<p>The Preliminary programme can be found here. Your input is very welcome, so, please, feel free to send us your suggestions (the deadline for suggestions is August 6th). As agreed in the first epigraphy.info workshop (see in detail in <a href="http://doi.org/10.11588/heidok.00024397" target="_blank" rel="noopener">http://doi.org/10.11588/heidok.00024397</a> the main topic of this one should be the demonstration of a prototype web application of an editor and a search mechanism, but other issues will be addressed as well.</p>
+
+<h3 id="travel-and-accommodation">Travel and accommodation</h3>
+
+<p><strong>Travel</strong></p>
+
+<p>The best way to travel to and from Zadar is by plane and/or by bus; unfortunately, there are no trains leading to Zadar, but there are many buses from Zagreb to Zadar, and the drive takes approximately 3 and a half hours.
+There are some direct flights to Zadar either by major airline companies or the low-budget ones; however, most of them usually fly on certain days only (e.g. Mondays and Fridays) so perhaps you won’t find them convenient; thus it would perhaps be best to fly to Zagreb (which has more direct lines) and then proceed by bus.
+Bus lines are quite frequent and you can find timetables at <a href="https://voznired.akz.hr/?lang=en">https://voznired.akz.hr/</a> (for departures from Zagreb to Zadar) or <a href="http://www.liburnija-zadar.hr/linije.php?tip=4&amp;polaziste=01&amp;odrediste=Z+A+G+R+E+B&amp;lang=en" target="_blank" rel="noopener">http://www.liburnija-zadar.hr/</a> (for departures from Zadar to Zagreb). You can also check the following companies: <a href="https://getbybus.com/hr/autobus-zagreb" target="_blank" rel="noopener">https://getbybus.com/hr/autobus-zagreb</a> and <a href="https://www.flixbus.com" target="_blank" rel="noopener">Flixbus</a>.</p>
+
+<p><strong>Accommodation</strong></p>
+
+<p>During the second half of September many hotels and hostels are still booked solid or have only a few rooms left; however, there are plenty of excellent, good and decent apartments or other types of accommodation near the venue where one could find a place to stay (at a reasonable price) so we are positive that you would find a place of your pleasing; we recommend browsing booking.com (places near the University in the old town centre) and looking for places with at least three stars and with the booking.com rating of at least 7.5 and upwards.</p>
+
+<p>In addition, we are glad to inform you that the University could provide a subsidized accommodation (120 kn [app. 16 €] per night per person) at the University dormitory (either in the facilities at Ul. Dr. Franje Tuđmana 24 d or at Trg kneza Višeslava 9) for a maximum of four persons (two two-bed apartments) – if they won’t mind sharing apartments – so we kindly ask those who might be interested in that option to send an application to the Steering committee members together with a brief explanation of their request. The dead-line for the application is August 6th.</p>
+
+<hr />
+
+<h1 id="programme">Programme</h1>
+
+<h2 id="friday-14th-december-2018--afternoon-1500---1800">Friday, 14th December 2018 – afternoon 15:00 - 18:00</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Opening Greetings</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="i-demonstration-of-newly-developed-editors-which-could-serve-for-epigraphyinfo-chair-e-mylonas">I. Demonstration of newly developed editors which could serve for epigraphy.info (chair: E. Mylonas):</h3>
+
+<ul>
+  <li>Petrae/Patrimonium (V. Razanajao)</li>
+  <li>Perseids/Syriaca (video presentation Z. Fletcher) <a href="/documents/workshop_2_slides/Perseids-Syriaca%20by%20Z.%20Fletcher.pdf" target="_blank" rel="noopener">Workshop slides</a></li>
+  <li>Brill editor (E. Suyver) <a href="/documents/workshop_2_slides/SEG@Brill.pptx" target="_blank" rel="noopener">Workshop slides</a></li>
+  <li>Networked epigraphic applications (P. Liuzzo)</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Coffee Break: 16:20 - 16:35</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>READ editor (L. Calvelli / S. White ) <a href="/documents/workshop_2_slides/Calvelli-White%20presentazione%20READ%20Platform%20Zara.pdf" target="_blank" rel="noopener">Workshop slides</a></li>
+  <li>TEI-Publisher / Ceteicean / CapiTainS (P. Liuzzo ) <a href="/documents/workshop_2_slides/Liuzzo%20and%20Weise%20CDE%20and%20EDAK.pptx" target="_blank" rel="noopener">Workshop slides</a></li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>followed by a discussion (both regarding the presented editors/applications and models of exchanges in practice, and decision about functional requirements of an epigraphy.info editor)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>18:00 Dinner Buffet (provided by the organisers)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+<h2 id="saturday-15th-december-2018--morning-0900---1300">Saturday, 15th December 2018 – morning 09:00 - 13:00</h2>
+
+<h3 id="ii-plenary-session-chair-j-cowey">II. Plenary Session (chair: J. Cowey)</h3>
+
+<p>Allied project reports (10 minutes each)</p>
+<ul>
+  <li>Oxford meeting (T. Elliott) <a href="https://docs.google.com/presentation/d/1-Efg6vWBwcALq64GhWhewKndLV5u9EygTUlxOrEkZcY/edit?usp=sharing" target="_blank" rel="noopener">Workshop Slides</a></li>
+  <li>GODOT (F. Grieshaber) <a href="/documents/workshop_2_slides/godot.pdf" target="_blank" rel="noopener">Workshop slides</a></li>
+  <li>Trismegistos corpusdata + New Trismegistos API (T. Gheldof)</li>
+  <li>LatinNow (video presentation S. Vanderbilt) <a href="https://prezi.com/view/eVJ3GyAy9VNsDSHjxOLu/" target="_blank" rel="noopener">Workshop Slides</a></li>
+  <li>EPNet (J. M. Bermúdez)</li>
+  <li>Comparative Digital Epigraphy and EDAK (P. Liuzzo / F. Weise) <a href="/documents/workshop_2_slides/Liuzzo%20and%20Weise%20CDE%20and%20EDAK.pptx" target="_blank" rel="noopener">Workshop slides</a></li>
+  <li>CRMepi CRMtext (video presentation F. Murano / A. Felicetti)</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Coffee break - 10:30-10:45</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>“State of data &amp; discipline”: what’s already done and who is doing it? (F. Feraudi-Gruénais) <a href="/documents/workshop_2_slides/ZD-WS_Feraudi_II2-state-of-data_Def.pdf" target="_blank" rel="noopener">Workshop slides</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Decisions about how to formalise</p>
+<ul>
+  <li>what is the mission of the epigraphy.info group?</li>
+  <li>editorial board &amp; workflow of submission and finalization</li>
+  <li>how best to organize the committees memberships, roles and responsibilities</li>
+  <li>the relation of these committees to IDEA and AIEGL</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Lunch break - 13:00 - 14:00 (provided by the organisers)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+<h2 id="saturday-15th-december-2018--afternoon-1400---1800">Saturday, 15th December 2018 – afternoon 14:00 - 18:00</h2>
+
+<h3 id="iii-breakout-sessions---block-1-1400---1530">III. Breakout Sessions - block 1 14:00 - 15:30</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Testing of editors that have been presented during the Friday afternoon session and / or setting up of own apps with own texts (N.N.)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Round table discussion: new issues, ideas, concerns, and requests for explanation (N.N.)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="iv-breakout-sessions---block-2-1400---1530">IV. Breakout Sessions - block 2 14:00 - 15:30</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Technical solution for bibliographical questions and unique identifier for inscriptions (T. Gheldof)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Common work on the EAGLE Execution Techniques Vocabulary (S. Evangelisti / P. Liuzzo)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Coffee break - 15:30-16:00</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="v-varia---plenary-session-chair-t-elliott-1600---1800">V. Varia - Plenary Session (chair: T. Elliott) 16:00 - 18.00</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Results of the breakout sessions</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Integration of Greek inscriptions (final decision)</p>
+<ul>
+  <li>Concept &amp; structure of epigraphy.info (final decision)</li>
+  <li>Global search (decision about functional requirements)</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Integration of instrumentum domesticum / portable supports</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Strategic and legal questions in dealing in epigraphy.info with unpublished inscriptions, ensuring that the publication privileges are respected (also including those on the black market and other ethical issues)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Possibilities for financing and institutional anchoring (discussion &amp; deciding on further actions)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h2 id="sunday-16th-december-2018--morning-0930---1230">Sunday, 16th December 2018 – morning 09:30 - 12:30</h2>
+
+<h3 id="vi-results---plenary-session-chair-a-kurilić">VI. Results - Plenary Session (chair: A. Kurilić)</h3>
+
+<ul>
+  <li>General discussion</li>
+  <li>Conclusions</li>
+  <li>Choosing the venue and specific date of the next workshop; choosing members of new committee</li>
+  <li>“what to do next?”</li>
+</ul>
+
+<p>* Lunch Buffet (provided by the organisers)</p>
+
+
+  </article>
+  
+</div>
+</div>
+
+    </div>
+
+    <br>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h3 class="footer-heading">Epigraphy.info</h3>
+<!--
+    <div class="site-navigation">
+
+      <p><strong>Site Map </strong></p>
+      <ul class="pages">
+        
+        
+          <li class="nav-link"><a href="/404.html">Are you lost?</a>
+        
+        
+        
+          <li class="nav-link"><a href="/committee/">Committee</a>
+        
+        
+        
+          <li class="nav-link"><a href="/contact/">Contact</a>
+        
+        
+        
+          <li class="nav-link"><a href="/documents/">Documents</a>
+        
+        
+        
+          <li class="nav-link"><a href="/events/">Upcoming Events</a>
+        
+        
+        
+        
+        
+          <li class="nav-link"><a href="/funding_wg/">Funding WG</a>
+        
+        
+        
+        
+        
+          <li class="nav-link"><a href="/join_us/">Join us!</a>
+        
+        
+        
+        
+        
+          <li class="nav-link"><a href="/nacgle_2020/">NACGLE 2020</a>
+        
+        
+        
+          <li class="nav-link"><a href="/news/">News</a>
+        
+        
+        
+          <li class="nav-link"><a href="/ontologies_wg/">Technical WG - Ontologies</a>
+        
+        
+        
+          <li class="nav-link"><a href="/partners/">Partners</a>
+        
+        
+        
+          <li class="nav-link"><a href="/social_media_wg/">Social Media WG</a>
+        
+        
+        
+          <li class="nav-link"><a href="/vocabularies_wg/">Technical WG - Vocabularies</a>
+        
+        
+        
+          <li class="nav-link"><a href="/working_groups/">Working Groups</a>
+        
+        
+        
+          <li class="nav-link"><a href="/workshop_1/">Workshop 1</a>
+        
+        
+        
+          <li class="nav-link"><a href="/workshop_2/">Workshop 2</a>
+        
+        
+        
+          <li class="nav-link"><a href="/workshop_3/">Workshop 3</a>
+        
+        
+        
+          <li class="nav-link"><a href="/workshop_4/">Workshop 4</a>
+        
+        
+        
+          <li class="nav-link"><a href="/workshop_5/">Workshop 5</a>
+        
+        
+        
+          <li class="nav-link"><a href="/workshop_6/">Workshop 6</a>
+        
+        
+        
+          <li class="nav-link"><a href="/workshop_6_posters/">Workshop 6 posters</a>
+        
+        
+        
+          <li class="nav-link"><a href="/workshop_7/">Workshop 7</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+-->    
+
+    <div class="site-contact">
+
+      <p><strong>Contact us</strong></p>
+      <ul class="social-media-list">
+        <li>
+          <a href="mailto:info@epigraphy.info">
+            <i class="fa fa-envelope-o"></i>
+            <span class="username">info@epigraphy.info</span>
+          </a>
+        </li>
+
+        
+          
+          <li>
+            <a href="https://github.com/epigraphy-info" title="Fork us on GitHub">
+              <i class="fa fa-github"></i>
+              <span class="username">epigraphy-info</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://twitter.com/epigraphy_info" title="Follow us on Twitter">
+              <i class="fa fa-twitter"></i>
+              <span class="username">epigraphy_info</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://facebook.com/epigraphy.info" title="Follow us on Facebook">
+              <i class="fa fa-facebook"></i>
+              <span class="username">epigraphy.info</span>
+            </a>
+          </li>
+          
+        
+          
+        
+          
+          <li>
+            <a href="https://www.youtube.com/c/epigraphy-info" title="Subscribe on YouTube">
+              <i class="fa fa-youtube"></i>
+              <span class="username">epigraphy-info</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://www.instagram.com/epigraphy.info/" title="Follow us on Instagram">
+              <i class="fa fa-instagram"></i>
+              <span class="username">epigraphy.info</span>
+            </a>
+          </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+      </ul>
+    </div>
+
+    <div class="site-signature">
+      <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+      <p class="text">Epigraphy.info is an international open community pursuing a collaborative environment for digital epigraphy, which facilitates scholarly communication and interaction.
+</p>
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Default syntax highlighting
+  hljs.initHighlightingOnLoad();
+
+  // Header
+  // var menuToggle = $('#js-mobile-menu').unbind();
+  // $('#js-navigation-menu').removeClass("show");
+  // menuToggle.on('click', function(e) {
+  //   e.preventDefault();
+  //   $('#js-navigation-menu').slideToggle(function(){
+  //     if($('#js-navigation-menu').is(':hidden')) {
+  //       $('#js-navigation-menu').removeAttr('style');
+  //     }
+  //   });
+  // });
+});
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function responsiveHeaderFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+</script>
+
+
+
+
+
+
+  </body>
+
+</html>
