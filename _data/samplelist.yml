@@ -1,0 +1,70 @@
+docs_list_title: Epigraphy
+#docs:
+
+nav:
+  - title: News
+    url: news/
+    subnav: 
+      - title: Latest news
+        url: news/
+      - title: Upcoming events
+        url: events/
+  - title: People
+    url: people/
+    subnav:
+      - title: Steering Committee
+        url: committee/
+      - title: Partners
+        url: partners/
+  - title: Working Groups
+    url: working_groups/
+    subnav:
+      - title: Working groups
+        url: working_groups/      
+      - title: Social Media
+        url: social_media_wg/
+      - title: Funding
+        url: funding_wg/
+      - title: Ontologies
+        url: ontologies_wg/
+      - title: Vocabularies
+        url: vocabularies_wg/            
+  - title: Meetings
+    url: meetings/
+    subnav:
+      - title: Workshop 1 (Heidelberg)
+        url: workshop_1/
+      - title: Workshop 2 (Zadar)
+        url: workshop_2/
+      - title: Workshop 3 (Vienna)
+        url: workshop_3/
+      - title: Nacgle 2020
+        url: nacgle_2020/
+      - title: Workshop 4 (Hamburg)
+        url: workshop_4/
+      - title: Workshop 5 (Leuven/online)
+        url: workshop_5/ 
+      - title: Workshop 6 (IAS/online)
+        url: workshop_6/ 
+      - title: Workshop 7 (Leuven)
+        url: workshop_7/ 
+  - title: Documents
+    url: documents/
+    subnav:
+      - title: Documents
+        url: documents/    
+  - title: Contact
+    url: contact/
+    subnav:
+      - title: Contact us
+        url: contact/
+      - title: Join us!
+        url: join_us/
+  
+
+ 
+  
+
+
+
+
